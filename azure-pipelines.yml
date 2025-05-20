@@ -10,6 +10,8 @@ pool:
 steps:
 - task: Maven@3
  inputs:
+- task: MavenAuthenticate@0
+  inputs:
  mavenPomFile: 'pom.xml'
  mavenOptions: '-Xmx3072m'
  javaHomeOption: 'Path'
